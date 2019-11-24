@@ -11,7 +11,8 @@ pipeline {
 
     stage ( 'Run' ) {
       steps {
-        ansiblePlaybook( credentialsId: 'jenkins',
+        ansiblePlaybook( credentialsId: 'ansible',
+                         extras: '-e host_key_checking=False',
                          installation: 'ansible',
                          inventory: 'inventory/hosts.yml',
                          playbook: 'playbook.yml',
