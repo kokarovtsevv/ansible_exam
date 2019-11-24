@@ -1,0 +1,6 @@
+- src: https://github.com/kokarovtsevv/docker_exam
+  name: docker_exam
+- src: https://github.com/kokarovtsevv/webapp_exam
+  name: webapp_exam
+- src: https://github.com/kokarovtsevv/nginx_balance_exam
+  name: nginx_balance_exam
