@@ -20,8 +20,10 @@ pipeline {
 
     stage ( 'Test' ) {
       steps {
-        def response = httpRequest 'http://localhost:8888'
-        println("Response: "+response)
+        script {
+          def response = httpRequest 'http://localhost:8888'
+          println("Response: "+response)
+        }
       }
     }
   }
