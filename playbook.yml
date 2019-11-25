@@ -2,7 +2,7 @@
 
 - hosts: webapp 
   roles:
-#   - docker_exam
+   - docker_exam
    - webapp_exam 
 
 - hosts: nginx
