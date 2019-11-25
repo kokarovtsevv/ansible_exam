@@ -2,6 +2,7 @@
 #ansible_host: 172.17.0.6
 ansible_host: 127.0.0.1
 ansible_user: jenkins
+ansible_ssh_extra_args: '-o StrictHostKeyChecking=no'
 #ansible_ssh_private_key_file: ~/.ssh/ssh_slave
 container: nginx_balancer
 container_port: 8888 

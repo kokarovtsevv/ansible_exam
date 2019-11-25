@@ -11,22 +11,17 @@ pipeline {
 
     stage ( 'Run' ) {
       steps {
-        ansiblePlaybook( credentialsId: 'ansible',
-                         extras: '-e host_key_checking=False',
-                         installation: 'ansible',
+        ansiblePlaybook( credentialsId: '4bd0dcd9-8f39-403b-a7c3-645943f21763',
                          inventory: 'inventory/hosts.yml',
                          playbook: 'playbook.yml',
                          vaultCredentialsId: 'vault')   
       }
     }
 
-    stage ( 'Test' ) {
-      steps {
-        script {
-          def response = httpRequest(url: 'http://172.17.0.4:8888', validResponseCodes: '200')
-          println( response )
-        }
-      }
-    }
+//    stage ( 'Test' ) {
+//      steps {
+//       #some text 
+//      }
+//    }
   }
 }
