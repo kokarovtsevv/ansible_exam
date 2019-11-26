@@ -5,3 +5,5 @@
   name: webapp_exam
 - src: https://github.com/kokarovtsevv/nginx_balance_exam
   name: nginx_balance_exam
+- src: https://github.com/kokarovtsevv/net.git
+  name: net

@@ -21,7 +21,7 @@ pipeline {
     stage ( 'Test' ) {
       steps {
         script {
-          def response = httpRequest 'http://localhost:8888'
+          def response = httpRequest 'http://172.17.0.1:8888'
           println("Response: "+response)
         }
       }
