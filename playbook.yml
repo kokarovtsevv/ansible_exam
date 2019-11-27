@@ -1,5 +1,9 @@
 ---
 
+#- hosts: nginx
+#  roles:
+#  - nginx_balance_exam
+
 - hosts: webapp 
   roles:
 #   - docker_exam
